@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: telegram-video-downloader
+    runtime: docker
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: WEBHOOK_SECRET
+        generateValue: true

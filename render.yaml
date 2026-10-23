@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: telegram-video-downloader
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    autoDeploy: true
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: MAX_UPLOAD_MB
+        value: "49"
+      - key: DOWNLOAD_TIMEOUT_SECONDS
+        value: "240"
+      - key: MAX_CONCURRENT_DOWNLOADS
+        value: "1"

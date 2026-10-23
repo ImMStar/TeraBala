@@ -1,2 +1,4 @@
-python-telegram-bot[webhooks]==22.5
-yt-dlp[default]
+python-telegram-bot==21.6
+Flask
+yt-dlp
+gunicorn

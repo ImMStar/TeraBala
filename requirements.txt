@@ -1,1 +1,4 @@
 yt-dlp[default]
+python-telegram-bot
+Flask
+gunicorn
